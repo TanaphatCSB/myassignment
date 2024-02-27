@@ -1,0 +1,452 @@
+@font-face {
+  font-family: 'Kanit';
+  src: url('./font/Kanit-Regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'Kanit', sans-serif;
+}
+
+.err {
+  color: rgb(137, 2, 2);
+  font-weight: bold;
+  transform: translateY(-300%);
+  text-align: right;
+}  
+
+
+
+
+.video-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.Formbg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  width: 500px;
+  height: 500px; 
+  margin: auto;
+  margin: 90px auto 0 auto; 
+  background-color: #002931a1;
+  backdrop-filter: blur(2px);
+  border-radius: 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 30px; 
+}
+
+.Formbg .myform{
+  width: 100%;
+  padding: 40px;
+}
+
+.myform h2{
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  transform: translateY(-20%);
+  color: #6fb4c2;
+}
+
+.App,h2{
+  color:white;
+  text-align: center;
+}
+
+.myform{
+  position:relative;
+  padding:100px;
+}
+
+.App,label{
+  color: white;
+}
+
+
+.txtbox{
+  position: relative;
+  border-bottom: 2px solid #6fb4c2;;
+  margin:30px 0;
+  width: 100%;
+  height: 30px;
+}
+
+.txtbox input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline:none;
+  color: white;
+}
+
+input[type="text"] {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.txtbox label{
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-100%);
+  color: #6fb4c2;
+  left: 0px;
+  font-size: 18px;
+}
+
+.txtbox input:focus~label
+.txtbox input:valid~label{
+  top: -5px;
+}
+
+select {
+  width: 100px; 
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  outline: none; 
+  background-color: #f8f8f8; 
+  color: #333; 
+  left: 40px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+select:focus {
+  border-color: #007bff; 
+}
+
+option:hover {
+  background-color: #007bff;
+  color: #fff; 
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.txtbox2{
+  position: relative;
+  margin:30px 0;
+  width: 100%;
+  height: 30px;
+}
+
+.txtbox2 label{
+  position: absolute;
+  font-weight: bold;
+  transform: translateY(-100%);
+  left: 0px;
+  color: #6fb4c2;
+  font-size: 18px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  outline: none;
+}
+
+input[type="date"]:focus {
+  border-color: dodgerblue; 
+}
+
+input[type="date"]:valid {
+}
+
+input[type="button"] {
+  padding: 10px 40px; /* ปรับขนาดของ padding ตามความเหมาะสม */
+  border: none; /* ไม่มีเส้นขอบ */
+  border-radius: 5px; /* มุมขอบ */
+  background-color: #333e51; /* สีพื้นหลัง */
+  color: white; /* สีของข้อความ */
+  font-weight: bold;
+  font-size: 16px; /* ขนาดตัวอักษร */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นลูกศรเมื่อชี้ไปที่ปุ่ม */
+  transition: background-color 0.3s;
+  margin-right: 10px; /* เพิ่มช่องว่างด้านขวาของปุ่ม */
+}
+  
+
+input[type="reset"] {
+  padding: 10px 54px; 
+  border: none;
+  border-radius: 5px; 
+  background-color: #dacfbc;
+  color: #333; 
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin-left: 10px;
+}
+
+
+
+/* เมื่อ hover ที่ปุ่ม */
+input[type="button"]:hover {
+  background-color: #4CAF50; /* สีพื้นหลังเมื่อ hover */
+  color: green;
+}
+input[type="reset"]:hover {
+  background-color: #e70a0a; /* สีพื้นหลังเมื่อ hover */
+  color: white;
+}
+
+
+.biggestresult{
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: rgb(13, 34, 46);
+  width: 500px;
+  height: 400px; 
+  margin: auto;
+  margin: 50px auto 0 auto; 
+  border-radius: 10px;
+  padding: 40px;
+  top: 100px;
+  left: -40px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+ .bigresult{
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: rgb(23, 59, 81);
+  width: 500px;
+  height: 400px; 
+  margin: auto;
+  margin: -100px auto 0 auto; 
+  left: -20px;
+  border-radius: 10px;
+  padding: 40px;
+  top: 40px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+} 
+
+.result{  
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color:#f4e793;
+  background-color: rgb(29, 79, 107);
+  width: 500px;
+  height: 400px; 
+  margin: auto;
+  margin: -50px auto 0 auto; 
+  border-radius: 10px;
+  padding: 40px;
+  top: -10px;
+  left: -15px;
+  font-weight: bold;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+.modal {
+  position: fixed; /* ตั้งค่าให้โมดัลติดแนวตั้งและแนวนอน */
+  top: 0;
+  left: 0;
+  width: 100%; /* ขนาดครอบคลุมทั้งความกว้าง */
+  height: 100%; /* ขนาดครอบคลุมทั้งความสูง */
+  background-color: #000000a6; /* สีพื้นหลัง */
+  z-index: 999; /* ค่า z-index เพื่อให้โมดัลอยู่ด้านหน้า */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* ย้ายไปกลางจอ */
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 41, 55);
+  font-size: 20px;
+  width: 400px;
+  height: 120px; 
+  margin: auto;
+  border-radius: 10px;
+  padding: 50px;
+  font-weight: bold;
+  animation: slideIn 0.5s ease forwards; /* เรียกใช้ keyframe animation */
+}
+
+.modal-buttons {
+  text-align: center;
+}
+
+.modal-buttons button {
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: rgb(28, 60, 55);
+  color: white;
+  border: none;
+}
+
+.modal-buttons .notaccept {
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 60px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 78, 147);
+  border: none;
+}
+
+
+.modal-buttons button:hover {
+  background-color: #3d8f91;
+  color: #2a565d;
+}
+
+.modal-buttons .notaccept:hover {
+  background-color: #c40000;
+  color: white;
+}
+
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a6;
+  z-index: 999;  
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.alert-content {
+  text-align: center;
+  padding: 30px 70px;
+  background-color: #430f0f;
+  color: #dc4a3a;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -200%); /* ย้ายออกจากจุดเริ่มต้น */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.5s ease forwards; /* เรียกใช้ animation */
+}
+
+
+.alert-content:hover {
+  transform: translate(-50%, -50%) scale(1.05); /* เพิ่มขนาดเมื่อ hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); /* เพิ่มเอฟเฟ็กต์ shadow เมื่อ hover */
+}
+
+
+.alert h3 {
+  margin-top: 0;
+}
+
+.alert button {
+  padding: 10px 20px;
+  background-color: #f3dcb6;
+  color: #dc4a3a; /* สีข้อความ */
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.alert button:hover {
+  background-color:  #dc4a3a; /* สีเมื่อชี้เม้าส์ */
+  color: #f3dcb6;
+}
+
+
+input[type="reset"].back {
+  padding: 10px 54px; 
+  border: none;
+  border-radius: 5px; 
+  background-color: #f4e793;
+  color: #0f4450; 
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+  margin-left: 10px;
+}
+
+input[type="reset"].back:hover {
+  background-color: #093663;
+  color: #eeff9a;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
